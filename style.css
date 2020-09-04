@@ -13,12 +13,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     --grid-rows: 1;
 }
 
-.grid-item {
-    padding: 1em;
-    border: 1px solid #ddd;
-    margin: auto;
-}
-
 h1 {
     text-align: center;
     color: gold;
@@ -70,6 +64,7 @@ button:hover{
     display: grid;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+    overflow: hidden;
 }
 
 #leftButton {
